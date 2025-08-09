@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: Arial, Verdana, Sans-Serif;
+}
+header h1 {
+  color: white;
+  padding: 20px;
+}
+@media screen and (orientation: landscape) {
+    body {
+    background: blue
+    url('cev-landscape.jpg') center
+    center/cover no-repeat fixed;
+  }
+    header h1 {
+    text-align: left;
+  }
+}
+@media screen and (orientation: portrait) {
+    body {
+      background: blue url('cev-portrait.jpg')
+      center center/cover no-repeat fixed;
+    }
+    h1 {
+      text-align: center;
+    }
+}
