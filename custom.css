@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: arial, helvetica, Sans-Serif;
+}
+h1 {
+  text-align: center;
+  color: white;
+  margin: 20px 0 10px 0;
+}
+img, main {
+  margin: auto;
+  display: block;
+}
+body {
+  background: #00411f url('imagens/back-phone.jpg')
+  center center/cover no-repeat fixed;
+}
+main {
+  background-color: #ffffffc7;
+  width: 70%;
+  border-radius: 10px;
+}
+
+#phone { display: block; }
+#print { display: none; }
+#tablet { display: none; }
+#pc { display: none; }
+#tv { display: none; }
+/* Telas Responsivas */
+@media screen and (min-width: 490px) {
+  #tablet { display: block; }
+  #phone { display: none; }
+  #pc { display: none; }
+  #tv { display: none; }
+  #print { display: none; }
+  body { 
+    background: white url('imagens/back-tablet.jpg') center center/cover no-repeat fixed;
+  }
+}
+@media screen and (min-width: 1020px) {
+  #tablet { display: none; }
+  #phone { display: none; }
+  #pc { display: block; }
+  #tv { display: none; }
+  #print { display: none; }
+  body { 
+    background: #af02ff url('imagens/back-pc.jpg') center center/cover no-repeat fixed;
+  }
+}
+@media screen and (min-width: 1980px) {
+  #tablet { display: none; }
+  #phone { display: none; }
+  #pc { display: none; }
+  #tv { display: block; }
+  #print { display: none; }
+  body {
+    background: #c9c9c9 url('imagens/back-tv.jpg') center center/cover no-repeat fixed;
+  }
+}
+@media print {
+  #tablet { display: none; }
+  #phone { display: none; }
+  #pc { display: none; }
+  #tv { display: none; }
+  #print { display: block; }
+  * {
+    font-family: Monospace, Courier New;
+  }
+  h1 {
+    text-align: center;
+  }
+}
