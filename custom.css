@@ -68,7 +68,7 @@ main {
   #tv { display: none; }
   #print { display: block; }
   * {
-    font-family: Monospace, Courier New;
+    font-family: Monospace, Courier New, Courier;
   }
   h1 {
     text-align: center;
